@@ -15,8 +15,6 @@ Bookkeeping indexes look like this
 | 3 | 4  | 5 | 6 |
 
 Each level contains 2^n blocks, so the total size required is 2^0 + 2^1 + 2^2.. etc or for short 2^(n+1)-1
-
-
 */
 template<typename allocator>
 class buddy_alloc_core

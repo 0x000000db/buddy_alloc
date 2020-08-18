@@ -12,7 +12,7 @@ void dump_r(const uint8_t* bookkeeping, size_t index, size_t width, size_t depth
 	case 0: printf("F"); break; // Free
 	case 1: printf("S"); break; // Split
 	case 2: printf("U"); break; // Used
-	case 3: printf("#"); break; // Allocated
+	case 3: printf("A"); break; // Allocated
 	}
 	bool has_children = (bookkeeping[index] == 1 || bookkeeping[index] == 2);
 	if (depth != max_depth && has_children)
